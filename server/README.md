@@ -10,3 +10,6 @@ la nueva vercion del nodo
 
 Cuando termine de ejecutarce el programa de instalacion reinaciaremos el equipo esto para que deje de usar la vercion anterior y empiece a usar la nueva version 
 
+Ya con la version v20.15.0 debemos de instalar el servidor esto la haremos desde la terminal escribiendo el comando 'npm install json-server' luego de instalarlo crearemos una capeta llamada 'server' dentro de esta carpeta crearemos un archivo llamado 'db.json' dentro de este archivo es donde se guardara toda la informacion de nuestro servidor local 
+
+por ultimo para obtener el url de este servidor ingresaremos el comando 'npx json-server db.json' en la consola esto encendera el servidor por lo cual ya podremos trabajar con el 
