@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net" modified="2024-06-25T17:25:15.522Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="zbdKkqMTBrFgepu4h9o-" version="24.6.2" type="google">
+  <diagram name="Página-1" id="96j0Fo0DVDoO2kmvJPkB">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CDKGiwrHETxJify6X78i-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDKGiwrHETxJify6X78i-16" target="CDKGiwrHETxJify6X78i-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-16" value="USUARIO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-17" value="ID_USUARIO:PK&lt;div&gt;NOMBRE&lt;/div&gt;&lt;div&gt;CORREO&lt;/div&gt;&lt;div&gt;TELEFONO&lt;/div&gt;&lt;div&gt;ROL&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CDKGiwrHETxJify6X78i-16">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-18" value="ELECCIONES" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-19" value="COD_ELEC:PK&lt;div&gt;NOMBRE&lt;br&gt;&lt;div&gt;FECHA_INI&lt;/div&gt;&lt;div&gt;FECHA_FIN&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CDKGiwrHETxJify6X78i-18">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDKGiwrHETxJify6X78i-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-20" value="CANDIDATO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-21" value="COD_CAND:PK&lt;div&gt;NOMBRE&lt;/div&gt;&lt;div&gt;PARTIDO_POLITICO&lt;/div&gt;&lt;div&gt;COD_BOLETA:FK&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CDKGiwrHETxJify6X78i-20">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDKGiwrHETxJify6X78i-24" target="CDKGiwrHETxJify6X78i-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDKGiwrHETxJify6X78i-24" target="CDKGiwrHETxJify6X78i-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-24" value="VOTOS" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-25" value="COD_VOTO:PK&lt;div&gt;ID_USUARIO:FK&lt;/div&gt;&lt;div&gt;COD_ELEC:FK&lt;/div&gt;&lt;div&gt;COD_CANDIDATO:FK&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CDKGiwrHETxJify6X78i-24">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-31" value="M : M" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-34" value="1 : 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-35" value="1 : M" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-42" value="1 : 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="380" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-43" value="USUARIO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CDKGiwrHETxJify6X78i-44" value="&lt;font color=&quot;#ff8000&quot;&gt;ID_USUARIO:PK&lt;/font&gt;&lt;div&gt;NOMBRE_USUARIO&lt;/div&gt;&lt;div&gt;CORREO_USUARIO&lt;/div&gt;&lt;div&gt;TELEFONO_USUARIO&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#009900&quot;&gt;COD_ROL:FK&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CDKGiwrHETxJify6X78i-43">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-1" value="ELECCCION" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="640" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-3" value="&lt;font color=&quot;#ff8000&quot;&gt;COD_ELECCION:PK&lt;/font&gt;&lt;div&gt;NOMBRE_ELECCION&lt;/div&gt;&lt;div&gt;FECHA_INI_ELECCION&lt;/div&gt;&lt;div&gt;FECHA_FIN_ELECCION&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="kW6e_GYlL9jCs7fhKBnF-1">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-7" value="CANDIDATO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="880" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-8" value="&lt;font color=&quot;#ff8000&quot;&gt;COD_CANDIDATO_PK&lt;/font&gt;&lt;div&gt;NOMBRE_CANDIDATO&lt;/div&gt;&lt;div&gt;PARTIDO_CANDIDATO&lt;/div&gt;&lt;div&gt;DESCRIPCCION&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="kW6e_GYlL9jCs7fhKBnF-7">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-9" value="VOTO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="880" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-10" value="&lt;font color=&quot;#ff8000&quot;&gt;COD_VOTO:PK&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#009900&quot;&gt;ID_USUARIO:FK&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#009900&quot;&gt;COD_ELECCION:FK&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#009900&quot;&gt;COD_BOLETA&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#009900&quot;&gt;COD_CANDIDATO:FK&lt;/font&gt;&lt;/div&gt;&lt;div&gt;ELECCION&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="kW6e_GYlL9jCs7fhKBnF-9">
+          <mxGeometry y="41" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-11" value="RESULTADOS" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="880" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-15" value="&lt;font color=&quot;#ff8000&quot;&gt;COD_RESULTADOS:PK&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#009900&quot;&gt;COD_VOTO:FK&lt;/font&gt;&lt;/div&gt;&lt;div&gt;GANADOR&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="kW6e_GYlL9jCs7fhKBnF-11">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-12" value="ROL" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="640" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-14" value="&lt;font color=&quot;#ff8000&quot;&gt;COD_ROL:PK&lt;/font&gt;&lt;div&gt;NOMBRE_ROL&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#009900&quot;&gt;COD_PERMISOS:FK&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="kW6e_GYlL9jCs7fhKBnF-12">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-13" value="PERMISOS" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="640" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="kW6e_GYlL9jCs7fhKBnF-16" value="&lt;font color=&quot;#ff8000&quot;&gt;COD_PERMISOS:PK&lt;/font&gt;&lt;div&gt;DESCRIPCCION&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="kW6e_GYlL9jCs7fhKBnF-13">
+          <mxGeometry y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,39 @@
+requerimientos proyecto votacion virtual
+
+funcionales
+	Registro y autenticación de votantes
+	Conteo de votos y publicación de resultados
+	Creación y gestión de elecciones
+	Gestión de usuarios y roles
+
+no funcionales
+	diseño responsivo
+	seguridad
+	rendimiento
+	usabilidad
+	mantenibilidad
+	fiabilidad
+
+
+roles
+	administrador
+		crear elecciones
+		configurar elecciones
+		generar reportes y resultados
+		gestionar lista de votantes y candidatos
+	votante
+		registrarce
+		acceder a la voleta de votacion
+		seleccinar opcciones de votacion
+		verificar el voto
+
+
+
+
+
+
+
+
+
+
+

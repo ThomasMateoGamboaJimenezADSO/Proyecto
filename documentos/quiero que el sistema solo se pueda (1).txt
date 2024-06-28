@@ -1,0 +1,12 @@
+quiero que el sistema solo se pueda modificar desde el propio codigo de ser posible que la creacion de botaciones c haga desde el codigo y que el entorno de la web sea para el votante 
+
+
+podria hacer el sitema de votaciones en python para ver que hay que hacer y como seria la manera de calcular el ganador sin mencionar ver como puedo manejar la informacion de la base de datos y juntarla para que pueda hacer una eleccion segura que por ejemplo al ingresar el nombre de un usuario genere un numero ramdom y que ese numero sea necesario para que el votante pueda logearce y votar
+
+
+investigar como manejar los datos o mas bien las listas de los votantes en exel ademas de hacer la propia base de datos
+
+
+limitare el maximo de candidatos por eleccion a 4 mas el voto en blanco dando un total de 5 opcciones a voto 
+
+
