@@ -8,6 +8,12 @@ a{
     text-decoration: none;
 }
 
+input, button{
+    border: solid 1px #cecece;
+    border-radius: 8px;
+    outline: none;
+}
+
 .contenedor{
     display: flex;
     justify-content: center;

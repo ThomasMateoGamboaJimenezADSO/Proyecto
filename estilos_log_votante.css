@@ -8,6 +8,12 @@ a{
     text-decoration: none;
 }
 
+input, button{
+    border: solid 1px #cecece;
+    border-radius: 8px;
+    outline: none;
+}
+
 .contenedor{
     display: flex;
     justify-content: center;
@@ -46,7 +52,6 @@ a{
     padding: 10px 20px; 
     margin: 25px 20px 5px;
     background-color: whitesmoke;
-    border-radius: 10px;
 }
 
 .login__link{
