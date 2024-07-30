@@ -8,13 +8,20 @@ a{
     text-decoration: none;
 }
 
+button{
+    border: solid 1px #cecece;
+    border-radius: 3px;
+    outline: none;
+    margin: 3px;
+}
+
 .header{
     display: flex;
     justify-content: end;
     align-items: center;
     width: auto;
     height: auto;
-    background-color: beige;
+    background-color: bisque;
 }
 
 .header__button{
@@ -28,6 +35,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: beige;
 }
 
 .container__title{
@@ -41,6 +49,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: azure;
 }
 
 .card__container{
@@ -81,6 +90,7 @@ a{
     border: solid 1px black;
     font-size: 76px;
     padding: 5px;
+    background-color: white;
 }
 
 .card--mod{
@@ -89,6 +99,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .card__text--mod{
