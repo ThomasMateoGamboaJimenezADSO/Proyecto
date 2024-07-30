@@ -13,7 +13,7 @@ a{
     justify-content: end;
     align-items: center;
     width: auto;
-    height: 40px;
+    height: auto;
     background-color: beige;
 }
 
@@ -39,10 +39,28 @@ a{
     width: 1000px;
     height: 200px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__container{
+    display: flex;
     justify-content: center;
     align-items: center;
     
 }
+
+.card__seccion{
+    padding: 15px;
+    margin: 5px;
+   
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+} 
 
 .card__img{
     width: 130px;
@@ -52,6 +70,7 @@ a{
 
 .card__code{
     padding: 5px;
+    margin-bottom: 20px;
 }
 
 .card__text{
@@ -62,4 +81,16 @@ a{
     border: solid 1px black;
     font-size: 76px;
     padding: 5px;
+}
+
+.card--mod{
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__text--mod{
+    font-size: 44px;
 }
